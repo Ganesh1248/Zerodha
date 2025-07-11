@@ -8,7 +8,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div>
-      <h1>Hello Ganesh!</h1>
+      <h1>hello bhai</h1>
+      <p>Zerodha App</p>
     </div>
   </React.StrictMode>
 );
