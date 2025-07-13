@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import HomePage from './landing_page/home/Home_Page';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div>
-      <h1>hello bhai</h1>
-      <p>Zerodha App</p>
-    </div>
+    <HomePage />
   </React.StrictMode>
 );
 
