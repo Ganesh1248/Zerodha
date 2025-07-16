@@ -9,7 +9,7 @@ function Education() {
                 </div>
 
                 <div className = 'col-6 mt-5 p-1'>
-                    <h1 className = 'mb-3 '>Free and open market education</h1>
+                    <h1 className = 'mb-3 fs-2'>Free and open market education</h1>
                     <p>Varsity, the largest online stock market education book in the worls covering everything from the basics to advance trading.</p>
                     <a href = '' style = {{textDecoration:"none"}}>Varsity <i class="fa-solid fa-arrow-right-long"></i></a>
                     <p className = 'mt-5'>TradingQ&A, the most active trading and investment community in India for all your market realted helps</p>
