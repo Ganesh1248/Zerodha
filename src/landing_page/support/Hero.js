@@ -22,20 +22,52 @@ function Hero() {
             </div>
 
             {/* Search Bar with Icon */}
-            <div className="row mb-5 mt-5">
-                <div className="col-12">
-                    <div className="input-group input-group-lg">
-                        <span className="input-group-text bg-white">
-                            <i className="fas fa-search text-muted"></i>
-                        </span>
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Search your issue here..."
-                        />
-                    </div>
-                </div>
-            </div>
+           <div className="row mb-5 mt-5">
+    <div className="col-12">
+        <div className="input-group search-container">
+            <span className="input-group-text bg-white border-end-0 pe-1">
+                <i className="fas fa-search text-muted"></i>
+            </span>
+            <input
+                type="text"
+                className="form-control border-start-0 ps-2"
+                placeholder="Search your issue..."
+            />
+        </div>
+    </div>
+</div>
+
+<style>{`
+    .search-container {
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    .search-container:focus-within {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .search-container .form-control {
+        height: 50px;
+        font-size: 0.9rem;
+        border-radius: 0 8px 8px 0 !important;
+    }
+    
+    .search-container .input-group-text {
+        height: 50px;
+        border-radius: 8px 0 0 8px !important;
+    }
+    
+    .search-container .form-control:focus {
+        box-shadow: none;
+        border-color: #ced4da;
+    }
+    
+    .search-container .form-control::placeholder {
+        font-size: 0.85rem;
+        color: #adb5bd;
+    }
+`}</style>
         </div>
     );
 }
